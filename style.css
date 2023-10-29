@@ -10,15 +10,17 @@ body {
 .calculator {
   display: flex;
   flex-direction: column;
-  border: 4px inset rgb(101, 101, 101);
+  border: 8px inset rgb(101, 101, 101);
   padding: 5px;
+  background-color: rgb(33, 178, 35);
+  width: 275px;
 }
 
 .display {
   border: 4px inset rgb(0, 0, 0);
   margin: 5px;
   padding: 0;
-  background-color: rgba(0, 0, 0, 0.468);
+  background-color: rgba(70, 70, 70, 0.53);
 }
 
 .row {
@@ -37,6 +39,7 @@ body {
   height: 45px;
   text-align: center;
   padding-top: 5px;
+  background-color: rgb(36, 235, 39);
 }
 
 .backspace {
@@ -45,6 +48,7 @@ body {
   height: 45px;
   text-align: center;
   padding-top: 5px;
+  background-color: rgb(36, 235, 39);
 }
 
 .operator {
@@ -53,6 +57,7 @@ body {
   height: 45px;
   text-align: center;
   padding-top: 5px;
+  background-color: rgb(36, 235, 39);
 }
 
 .divide {
@@ -61,6 +66,7 @@ body {
   height: 45px;
   text-align: center;
   padding-top: 5px;
+  background-color: rgb(36, 235, 39);
 }
 
 .number {
@@ -69,6 +75,7 @@ body {
   height: 45px;
   text-align: center;
   padding-top: 5px;
+  background-color: rgb(36, 235, 39);
 }
 
 .multiply {
@@ -77,6 +84,7 @@ body {
   height: 45px;
   text-align: center;
   padding-top: 5px;
+  background-color: rgb(36, 235, 39);
 }
 
 .minus {
@@ -85,6 +93,7 @@ body {
   height: 45px;
   text-align: center;
   padding-top: 5px;
+  background-color: rgb(36, 235, 39);
 }
 
 .plus {
@@ -93,6 +102,7 @@ body {
   height: 45px;
   text-align: center;
   padding-top: 5px;
+  background-color: rgb(36, 235, 39);
 }
 
 .equal {
@@ -101,6 +111,7 @@ body {
   height: 45px;
   text-align: center;
   padding-top: 5px;
+  background-color: rgb(36, 235, 39);
 }
 
 .zero {
@@ -109,4 +120,5 @@ body {
   height: 45px;
   text-align: center;
   padding-top: 5px;
+  background-color: rgb(36, 235, 39);
 }
