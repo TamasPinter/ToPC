@@ -1,0 +1,112 @@
+body {
+  background-color: rgb(210, 210, 210);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  border: 4px inset rgb(101, 101, 101);
+  padding: 5px;
+}
+
+.display {
+  border: 4px inset rgb(0, 0, 0);
+  margin: 5px;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.468);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row {
+  margin: 5px;
+  font-size: 35px;
+}
+
+.clear {
+  border: 4px inset black;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.backspace {
+  border: 4px inset black;
+  width: 70px;
+  height: 45px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.operator {
+  border: 4px inset black;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.divide {
+  border: 4px inset black;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.number {
+  border: 4px inset black;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.multiply {
+  border: 4px inset black;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.minus {
+  border: 4px inset black;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.plus {
+  border: 4px inset black;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.equal {
+  border: 4px inset black;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.zero {
+  border: 4px inset black;
+  width: 125px;
+  height: 45px;
+  text-align: center;
+  padding-top: 5px;
+}
