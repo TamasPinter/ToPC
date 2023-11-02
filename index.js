@@ -59,9 +59,11 @@ const divide = function (a, b) {
 };
 
 function setNumber(number) {
-  if (displayResult.textContent === "0" || shouldResetScreen);
-  resetScreen();
+  if (displayResult.textContent === "0" || shouldResetScreen) {
+    resetScreen();
+  }
   displayResult.textContent += number;
+  shouldResetScreen = false;
 }
 
 function resetScreen() {
