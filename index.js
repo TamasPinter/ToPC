@@ -11,6 +11,7 @@ const equalsBtn = document.getElementById("equalsBtn");
 const clearBtn = document.getElementById("clearBtn");
 const deleteBtn = document.getElementById("backspaceBtn");
 const decimalBtn = document.getElementById("decimalBtn");
+const previousTotals = document.getElementById("previousTotals");
 
 window.addEventListener("keydown", handleKeyboardInput);
 clearBtn.addEventListener("click", clear);
@@ -102,20 +103,6 @@ function resultRound(number) {
   return Math.round(number * 1000) / 1000;
 }
 
-function evaluate() {
-  if (currentOperator === null || shouldResetScreen) return;
-  if (currentOperator === "/" && displayResult.textContent === "0") {
-    alert("You can't divide by 0!");
-    return;
-  }
-  secondNumber = displayResult.textContent;
-  displayResult.textContent = resultRound(
-    calculate(currentOperator, firstNumber, secondNumber)
-  );
-  displayHistory.textContent = `${firstNumber} ${currentOperator} ${secondNumber} =`;
-  currentOperator = null;
-}
-
 function calculate(operator, a, b) {
   a = Number(a);
   b = Number(b);
@@ -131,4 +118,35 @@ function calculate(operator, a, b) {
     default:
       return null;
   }
+}
+
+function evaluate() {
+  if (currentOperator === null || shouldResetScreen) return;
+  if (currentOperator === "/" && displayResult.textContent === "0") {
+    alert("You can't divide by 0!");
+    return;
+  }
+  secondNumber = displayResult.textContent;
+
+  // Calculate the result
+  const result = resultRound(
+    calculate(currentOperator, firstNumber, secondNumber)
+  );
+
+  // Create a new element to hold the operation and result
+  const operationText = `${firstNumber} ${currentOperator} ${secondNumber} = ${result}`;
+  const operationElement = document.createElement("div");
+  //add style to div
+  operationElement.classList.add("previousTotals");
+  operationElement.textContent = operationText;
+
+  // Append the element to the previousTotals div
+  const previousTotals = document.getElementById("previousTotals");
+  previousTotals.appendChild(operationElement);
+
+  // Update the display
+  displayResult.textContent = result;
+  displayHistory.textContent = operationText;
+
+  currentOperator = null;
 }

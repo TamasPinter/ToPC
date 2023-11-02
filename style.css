@@ -13,14 +13,20 @@ body {
   border: 8px inset rgb(101, 101, 101);
   padding: 5px;
   background-color: rgb(33, 178, 35);
-  width: 275px;
+  width: 300px;
+  height: 350px;
+  margin-bottom: 30px;
 }
 
 .display {
   border: 4px inset rgb(0, 0, 0);
   margin: 5px;
+  height: 70px;
+  font-size: 30px;
+  text-align: center;
+  font-family: monospace;
   padding: 0;
-  background-color: rgba(70, 70, 70, 0.53);
+  background-color: rgba(70, 70, 70, 0.399);
 }
 
 .row {
@@ -35,7 +41,7 @@ body {
 
 #equalsBtn {
   border: 4px inset black;
-  width: 70px;
+  width: 55px;
   height: 45px;
   text-align: center;
   padding-top: 5px;
@@ -44,7 +50,7 @@ body {
 
 .operator {
   border: 4px inset black;
-  width: 45px;
+  width: 60px;
   height: 45px;
   text-align: center;
   padding-top: 5px;
@@ -53,16 +59,16 @@ body {
 
 #decimalBtn {
   border: 4px inset black;
-  width: 45px;
+  width: 55px;
   height: 45px;
   text-align: center;
   padding-top: 5px;
   background-color: rgb(36, 235, 39);
 }
 
-.number {
+button {
   border: 4px inset black;
-  width: 45px;
+  width: 55px;
   height: 45px;
   text-align: center;
   padding-top: 5px;
@@ -80,7 +86,7 @@ body {
 
 #clearBtn {
   border: 4px inset black;
-  width: 120px;
+  width: 133px;
   height: 45px;
   text-align: center;
   padding-top: 5px;
@@ -89,9 +95,20 @@ body {
 
 #backspaceBtn {
   border: 4px inset black;
-  width: 120px;
+  width: 133px;
   height: 45px;
   text-align: center;
   padding-top: 5px;
   background-color: rgb(36, 235, 39);
+}
+
+.previousTotals {
+  margin-left: 15px;
+  text-decoration: underline;
+  font-size: 26px;
+  background-color: rgb(183, 183, 248);
+  border: 2px solid black;
+  padding: 5px;
+  box-sizing: border-box;
+  text-align: center;
 }
