@@ -3,14 +3,14 @@ let secondNumber = "";
 let currentOperator = null;
 let shouldResetScreen = false;
 
-const displayHistory = document.getElementById(".displayHistory");
-const displayResult = document.getElementById(".displayMain");
-const numberBtns = document.querySelectorAll("[number]");
-const operationBtns = document.querySelectorAll("[operation]");
-const equalsBtn = document.getElementById(".equalsBtn");
-const clearBtn = document.getElementById(".clearBtn");
-const deleteBtn = document.getElementById(".backspaceBtn");
-const decimalBtn = document.getElementById(".decimalBtn");
+const displayHistory = document.getElementById("displayHistory");
+const displayResult = document.getElementById("displayMain");
+const numberBtns = document.querySelectorAll("[data-number]");
+const operationBtns = document.querySelectorAll("[data-operator]");
+const equalsBtn = document.getElementById("equalsBtn");
+const clearBtn = document.getElementById("clearBtn");
+const deleteBtn = document.getElementById("backspaceBtn");
+const decimalBtn = document.getElementById("decimalBtn");
 
 window.addEventListener("keydown", handleKeyboardInput);
 clearBtn.addEventListener("click", clear);
