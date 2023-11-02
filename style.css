@@ -33,16 +33,7 @@ body {
   font-size: 35px;
 }
 
-.clear {
-  border: 4px inset black;
-  width: 45px;
-  height: 45px;
-  text-align: center;
-  padding-top: 5px;
-  background-color: rgb(36, 235, 39);
-}
-
-.backspace {
+#equalsBtn {
   border: 4px inset black;
   width: 70px;
   height: 45px;
@@ -60,7 +51,7 @@ body {
   background-color: rgb(36, 235, 39);
 }
 
-.divide {
+#decimalBtn {
   border: 4px inset black;
   width: 45px;
   height: 45px;
@@ -78,45 +69,27 @@ body {
   background-color: rgb(36, 235, 39);
 }
 
-.multiply {
-  border: 4px inset black;
-  width: 45px;
-  height: 45px;
-  text-align: center;
-  padding-top: 5px;
-  background-color: rgb(36, 235, 39);
-}
-
-.minus {
-  border: 4px inset black;
-  width: 45px;
-  height: 45px;
-  text-align: center;
-  padding-top: 5px;
-  background-color: rgb(36, 235, 39);
-}
-
-.plus {
-  border: 4px inset black;
-  width: 45px;
-  height: 45px;
-  text-align: center;
-  padding-top: 5px;
-  background-color: rgb(36, 235, 39);
-}
-
-.equal {
-  border: 4px inset black;
-  width: 45px;
-  height: 45px;
-  text-align: center;
-  padding-top: 5px;
-  background-color: rgb(36, 235, 39);
-}
-
 .zero {
   border: 4px inset black;
   width: 125px;
+  height: 45px;
+  text-align: center;
+  padding-top: 5px;
+  background-color: rgb(36, 235, 39);
+}
+
+#clearBtn {
+  border: 4px inset black;
+  width: 120px;
+  height: 45px;
+  text-align: center;
+  padding-top: 5px;
+  background-color: rgb(36, 235, 39);
+}
+
+#backspaceBtn {
+  border: 4px inset black;
+  width: 120px;
   height: 45px;
   text-align: center;
   padding-top: 5px;
